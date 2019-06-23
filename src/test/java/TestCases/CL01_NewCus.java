@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class CL01_ 
+public class CL01_NewCus 
     extends TestCase
 {
     /**
@@ -15,7 +15,7 @@ public class CL01_
      *
      * @param testName name of the test case
      */
-    public CL01_( String testName )
+    public CL01_NewCus( String testName )
     {
         super( testName );
     }
@@ -25,7 +25,7 @@ public class CL01_
      */
     public static Test suite()
     {
-        return new TestSuite( CL01_.class );
+        return new TestSuite( CL01_NewCus.class );
     }
 
     /**

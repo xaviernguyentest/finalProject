@@ -1,5 +1,5 @@
 package Action_Acc;
 
-public class Edit {
+public class newAcc_Act {
 
 }
