@@ -2,16 +2,10 @@ package Based_Commons;
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
@@ -60,9 +54,9 @@ public class BasedTest {
 		switch (browser) {
 		case "Chrome":
 			WebDriverManager.chromedriver().setup();
-			ChromeOptions opt = new ChromeOptions();
-			opt.addArguments("headless");
-			driver = new ChromeDriver(opt);
+//			ChromeOptions opt = new ChromeOptions();
+//			opt.addArguments("headless");
+			driver = new ChromeDriver();
 			
 			break;
 		case "Firefox":
@@ -120,6 +114,8 @@ public class BasedTest {
 			Runtime.getRuntime().exec(cmd);
 		}
 	}
+	
+	//Chup hinh khi ket thuc TC
 	/*public static String TakeScreenshot() throws IOException {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		TakesScreenshot ts = (TakesScreenshot) driver;
