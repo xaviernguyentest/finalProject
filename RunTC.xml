@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteFullTest" verbose="1">
+
+	<test name="TestWithChrome">
+		<parameter name="browser" value="Chrome" />
+
+		<classes>
+			<class name="demoPOM.TestCases.CL01_Login" />
+			<class name="demoPOM.TestCases.CL02_CreateAccThenLogin" />
+			<!-- <class name="demoPOM.TestCases.CL03_demoWait" /> -->
+		</classes>
+	</test>
+
+
+</suite>
