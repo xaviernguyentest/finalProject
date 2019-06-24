@@ -2,7 +2,7 @@ package TestCases;
 
 import org.testng.annotations.Test;
 
-import Based_Commons.BasedTest;
+import Based.Commons.BasedTest;
 
 public class CL02_EditCus extends BasedTest {
 

@@ -1,6 +1,6 @@
 package Data;
 
-import Based_Commons.ReadExcel;
+import Based.Commons.ReadExcel;
 
 public class Datatest {
 	public static String user = "";
