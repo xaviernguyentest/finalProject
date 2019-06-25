@@ -16,7 +16,7 @@ public class MngDriver {
 	public static editCus editCus;
 	public static deleteCus delCus;
 	public static changePW changePW;
-	public static logOut logOut;
+	public static mainMenu MM;
 	public static balEnq balEnq;
 	public static deposit deposit;
 	public static fundTrans fTrans;
@@ -52,11 +52,11 @@ public class MngDriver {
 		return changePW;
 	}
 	
-	public static logOut mnglogOutPage(WebDriver driver) {
-		if (logOut == null) {
-			logOut = new logOut(driver);
+	public static mainMenu mngMMPage(WebDriver driver) {
+		if (MM == null) {
+			MM = new mainMenu(driver);
 		}
-		return logOut;
+		return MM;
 	}
 	
 }
