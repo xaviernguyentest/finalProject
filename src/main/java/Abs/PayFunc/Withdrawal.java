@@ -1,7 +1,7 @@
 package Abs.PayFunc;
 
 public class Withdrawal {
-	public static String wdrawLinktext = "//a[@href='WithdrawalInput.php']";
+	
 	public static String wdrawTitle = "//p[@class='heading3']";
 	public static String accNo = "//input[@name='accountno']";
 	public static String accNoMsg = "//label[@id='message2']";

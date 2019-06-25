@@ -1,7 +1,7 @@
 package Abs.PayFunc;
 
 public class Deposit {
-	public static String depositLinktext = "//a[@href='DepositInput.php']";
+	
 	public static String depositTitle = "//p[@class='heading3']";
 	public static String accNo = "//input[@name='accountno']";
 	public static String accNoMsg = "//label[@id='message2']";

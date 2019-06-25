@@ -1,7 +1,7 @@
 package Abs.PayFunc;
 
 public class StCustom {
-	public static String stateCustomLinktext = "//a[@href='CustomisedStatementInput.php']";
+	
 	public static String stateCustomTitle = "//p[@class='heading3']";
 	public static String accNo = "//input[@name='accountno']";
 	public static String accNoMsg = "//label[@id='message2']";

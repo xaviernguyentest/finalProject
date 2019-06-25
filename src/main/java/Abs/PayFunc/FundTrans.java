@@ -1,7 +1,7 @@
 package Abs.PayFunc;
 
 public class FundTrans {
-	public static String fundTransLinktext = "//a[@href='FundTransInput.php']";
+	
 	public static String fundTransTitle = "//p[@class='heading3']";
 	public static String payerAcc = "//input[@name='payersaccount']";
 	public static String payerAccMsg = "//label[@id='message10']";

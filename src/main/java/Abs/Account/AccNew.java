@@ -1,7 +1,7 @@
 package Abs.Account;
 
 public class AccNew {
-	public static String newAccLinktext = "//a[@href='addAccount.php']";
+	
 	public static String formNewCusTitle = "//p[@class='heading3']";
 	public static String cusID = "//input[@name='cusid']";
 	public static String cusIDMsg = "//label[@id='message14']";
