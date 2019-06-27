@@ -1,5 +1,10 @@
 package Method.PayFunc;
 
-public class stMini {
+import org.openqa.selenium.WebDriver;
 
+public class stMini {
+	WebDriver driverStMini;
+	public stMini(WebDriver driver) {
+		driverStMini = driver;
+	}
 }

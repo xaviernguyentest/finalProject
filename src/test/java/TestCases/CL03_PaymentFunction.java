@@ -7,7 +7,7 @@ import Based.Commons.BasedTest;
 public class CL03_PaymentFunction extends BasedTest {
 
 	@Test
-	public void TC01_CreateCus() {
+	public void TC01_CreateAcc() {
 		
 	}
 	

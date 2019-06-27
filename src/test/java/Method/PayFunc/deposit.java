@@ -1,5 +1,10 @@
 package Method.PayFunc;
 
-public class deposit {
+import org.openqa.selenium.WebDriver;
 
+public class deposit {
+	WebDriver driverDep;
+	public deposit(WebDriver driver) {
+		driverDep = driver;
+	}
 }

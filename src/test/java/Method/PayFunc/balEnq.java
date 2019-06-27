@@ -1,5 +1,10 @@
 package Method.PayFunc;
 
-public class balEnq {
+import org.openqa.selenium.WebDriver;
 
+public class balEnq {
+	WebDriver driverBalEnq;
+	public balEnq(WebDriver driver) {
+		driverBalEnq = driver;
+	}
 }
