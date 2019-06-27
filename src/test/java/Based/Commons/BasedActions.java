@@ -139,5 +139,14 @@ public class BasedActions {
 		});
 
 	}
+	// click on Radio btn
+	public void clickRadioBtn(WebDriver driver, String xpath) {
+		boolean value;
+		
+		value = driver.findElement(By.xpath(xpath)).isSelected();
+		if(value == false) {
+			driver.findElement(By.xpath(xpath)).click();
+		}
+	}
 
 }
