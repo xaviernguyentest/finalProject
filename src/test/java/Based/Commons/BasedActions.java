@@ -21,6 +21,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -147,6 +148,17 @@ public class BasedActions {
 		if(value == false) {
 			driver.findElement(By.xpath(xpath)).click();
 		}
+	}
+	
+	//Verify result
+		public void verifyTestResult(String actResult, String expResult) {
+			Assert.assertEquals(actResult, expResult);
+		}
+		
+	//Get title
+	public String getTitle (WebDriver driver) {
+		
+		return driver.getTitle();
 	}
 
 }
