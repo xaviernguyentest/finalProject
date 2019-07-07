@@ -11,6 +11,7 @@ import java.util.function.Function;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -159,6 +160,11 @@ public class BasedActions {
 	public String getTitle (WebDriver driver) {
 		
 		return driver.getTitle();
+	}
+	//Press tab button
+	public void pressTabFromKeyBoard(WebDriver driver, String xpath) {
+		WebElement inputField = driver.findElement(By.xpath(xpath));
+		inputField.sendKeys(Keys.TAB);
 	}
 
 }

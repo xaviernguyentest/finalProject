@@ -1,6 +1,6 @@
 package Abs.Customer;
 
-public class editCustomerPage {
+public class CusEdit_editCustomerPage {
 	public static String CusName = "//input[@name='name']";
 	public static String Gender_Male = "//input[@type='radio'and @value ='m']";
 	public static String Gender_FMale = "//input[@type='radio'and @value ='f']";

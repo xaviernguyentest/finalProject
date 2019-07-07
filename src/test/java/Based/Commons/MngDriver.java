@@ -12,9 +12,6 @@ public class MngDriver {
 	public static editAcc editAcc;
 	public static newAcc newAcc;
 	public static deleteAcc delAcc;
-	public static newCus newCus;
-	public static editCus editCus;
-	public static deleteCus delCus;
 	public static changePW changePW;
 	public static mainMenu MM;
 	public static balEnq balEnq;
@@ -24,7 +21,14 @@ public class MngDriver {
 	public static stMini stMini;
 	public static withdrawal withdraw;
 	public static homePage home;
+	public static newCus addNewCus;
+	public static newCus_CusRegMsg CusRegMsg;
+	public static editCus editCus;
+	public static editCus_editCustomerPage editCustomerPage;
+	public static editCus_CusUpdateMsg CusUpdateMsg;
+	public static deleteCus delCus;
 	
+
 	public static newAcc mngnewAccPage(WebDriver driver) {
 		if (newAcc == null) {
 			newAcc = new newAcc(driver);
@@ -106,6 +110,44 @@ public class MngDriver {
 			home = new homePage(driver);
 		}
 		return home;
+	}
+	public static newCus  mngNewCus(WebDriver driver) {
+		if (addNewCus == null) {
+			addNewCus = new newCus(driver);
+		}
+		return addNewCus;
+	}
+	
+	public static newCus_CusRegMsg  mngNewCus_CusRegMsg(WebDriver driver) {
+		if (CusRegMsg == null) {
+			CusRegMsg = new newCus_CusRegMsg(driver);
+		}
+		return CusRegMsg;
+	}
+	public static editCus mngeditCus(WebDriver driver) {
+		if (editCus == null) {
+			editCus = new editCus(driver);
+		}
+		return editCus;
+	}
+	public static editCus_editCustomerPage mngeditCustomerPage(WebDriver driver) {
+		if (editCustomerPage == null) {
+			editCustomerPage = new editCus_editCustomerPage(driver);
+		}
+		return editCustomerPage;
+	}
+	public static editCus_CusUpdateMsg mngCusUpdateMsg(WebDriver driver) {
+		if (CusUpdateMsg == null) {
+			CusUpdateMsg = new editCus_CusUpdateMsg(driver);
+		}
+		return CusUpdateMsg;
+	}
+	
+	public static deleteCus mngdelCus(WebDriver driver) {
+		if (delCus == null) {
+			delCus = new deleteCus(driver);
+		}
+		return delCus;
 	}
 	
 }
